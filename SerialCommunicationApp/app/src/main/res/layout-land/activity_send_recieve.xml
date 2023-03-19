@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="true"
+        tools:context=".SendReceiveActivity">
+
+        <Button
+            android:id="@+id/plusBtn"
+            android:layout_width="50dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="10dp"
+            android:text="+"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/singleSendTextInput"
+            app:layout_constraintEnd_toStartOf="@+id/minusBtn"
+            app:layout_constraintTop_toTopOf="@+id/singleSendTextInput"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/minusBtn"
+            android:layout_width="50dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="5dp"
+            android:text="-"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/singleSendTextInput"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/singleSendTextInput"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/clearLogsBtn"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="178dp"
+            android:layout_marginEnd="10dp"
+            android:text="Clear Logs"
+            app:layout_constraintEnd_toStartOf="@+id/textView8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/logText"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="15dp"
+            android:gravity="bottom"
+            android:outlineProvider="none"
+            android:overScrollMode="always"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical"
+            android:text="***Waiting for connection.***"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView"
+            app:layout_constraintEnd_toStartOf="@+id/textView8"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:text="Logs..."
+            android:textAlignment="viewStart"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="3dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="3dp"
+            app:layout_constraintBottom_toTopOf="@+id/clearLogsBtn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            app:srcCompat="@android:color/black" />
+
+        <Button
+            android:id="@+id/sendBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="84dp"
+            android:backgroundTint="#00BCD4"
+            android:text="Send"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <Button
+            android:id="@+id/startBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="84dp"
+            android:backgroundTint="#00BCD4"
+            android:text="Start"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+        <Button
+            android:id="@+id/stopBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="#00BCD4"
+            android:enabled="false"
+            android:text="Stop"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/startBtn"
+            app:layout_constraintTop_toBottomOf="@+id/startBtn" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:text="Single Send:"
+            android:textAlignment="viewStart"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/logText" />
+
+        <EditText
+            android:id="@+id/singleSendTextInput"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="10dp"
+            android:ems="10"
+            android:hint="0-255"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:textAlignment="viewStart"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/sendBtn"
+            app:layout_constraintEnd_toStartOf="@+id/plusBtn"
+            app:layout_constraintStart_toEndOf="@+id/sendBtn"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="60dp"
+            android:text="Continuous Send:"
+            android:textAlignment="viewStart"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <EditText
+            android:id="@+id/continuousSendTextInput"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="5dp"
+            android:ems="10"
+            android:hint="0-255"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:textAlignment="viewStart"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/startBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/startBtn"
+            app:layout_constraintTop_toTopOf="@+id/startBtn" />
+
+        <EditText
+            android:id="@+id/delayTextInput"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="5dp"
+            android:ems="10"
+            android:hint="delay(ms)"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:textAlignment="viewStart"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/stopBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/stopBtn"
+            app:layout_constraintTop_toTopOf="@+id/stopBtn" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="- Press back to terminate the connection!"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/clearLogsBtn" />
+
+        <TextView
+            android:id="@+id/connectedDeviceText"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="2dp"
+            android:text="(Connected to: )"
+            app:layout_constraintBottom_toBottomOf="@+id/textView4"
+            app:layout_constraintStart_toEndOf="@+id/textView4"
+            app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
