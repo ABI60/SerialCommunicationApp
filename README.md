@@ -14,7 +14,7 @@ bağlanmak için ana ekranda listeler.
 
 - İletişim kesilimini otomatik algılar.
 
-> APK olarak indirmek için: 
+> APK olarak indirmek için: https://drive.google.com/file/d/14govYNM8F2koIvXKOypu8lmvu_7N5nIk/view?usp=share_link
 
 # Program resimleri:
 <p float="left">
