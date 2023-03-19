@@ -1,5 +1,5 @@
 # SerialCommunicationApp
-Android Studio kullanılarak tamamen kendim yazdığım telefon-mikrodenetleyici iletişim programı.
+Android Studio kullanılarak tamamen kendim yazdığım telefon-mikrodenetleyici seri iletişim programı.
 
 - Karakter yerine direk sayılar ile iletişim kurar. Normalde bu tür programlar insanların okuyabildiği yazı ve karakterler
 kullanarak iletişim kurar, ancak ben bu programda bilerek sayıları gönderip almayı tercih ettim. Ben bu programı
