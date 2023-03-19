@@ -1,7 +1,7 @@
 # SerialCommunicationApp
 Android Studio kullanılarak tamamen kendim yazdığım telefon-mikrodenetleyici iletişim programı.
 
-Üniversite bitirme projesi için modifiye ettim.
+Üniversite bitirme projesi için modifiye ettim.g
 
 # Program resimleri:
 <p float="left">
