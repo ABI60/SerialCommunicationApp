@@ -1,9 +1,9 @@
 # SerialCommunicationApp
 Android Studio kullanılarak tamamen kendim yazdığım telefon-mikrodenetleyici seri iletişim programı.
 
-- Karakter yerine direk sayılar ile iletişim kurar. Normalde bu tür programlar insanların okuyabildiği yazı ve karakterler
-kullanarak iletişim kurar, ancak ben bu programda bilerek sayıları gönderip almayı tercih ettim. Ben bu programı
-aslında mikrodenetleyicileri test etme amaçlı yazdım ve mikrodenetleyici kodunu yazarken direkt sayıları kullanmak daha
+- Karakterler yerine direk sayılar göndererek ve alarak iletişim kurar. Normalde bu tür programlar insanların okuyabildiği
+yazı ve karakterler kullanarak oluşturulur, ancak ben bu programda bilerek sayıları gönderip almayı tercih ettim. Ben bu programı
+aslında mikrodenetleyicileri kolayca test etme amaçlı yazdım ve mikrodenetleyici kodunu yazarken direkt sayıları kullanmak daha
 kolay olduğundan dolayı bu şekilde yazmayı tercih ettim. İstenilirse çok kolay bir şekilde karakterlere dayalı iletişim
 olarak dönüştürülebilir.
 
