@@ -14,6 +14,8 @@ bağlanmak için ana ekranda listeler.
 
 - İletişim kesilimini otomatik algılar.
 
+> APK olarak indirmek için: 
+
 # Program resimleri:
 <p float="left">
   <img src="./Resimler/Ana Ekran.png" width="200">
