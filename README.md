@@ -3,8 +3,6 @@ Android Studio kullanılarak tamamen kendim yazdığım telefon-mikrodenetleyici
 
 Üniversite bitirme projesi için modifiye ettim.
 
-> Orijinal program link:
-
 # Program resimleri:
 <p float="left">
   <img src="./Resimler/Ana Ekran.png" width="200">
